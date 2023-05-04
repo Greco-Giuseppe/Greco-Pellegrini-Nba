@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title> NBA2K20 </title>
-    </head>
-    <body>
-        <h1>NBA2K20</h1>
-        {% for item in units %}
-            <p>{{ item }}</p>
-        {% endfor %}
-    </body>
+<head>
+    <title>Clash Units</title>
+</head>
+<body>
+    <img src="../static/images/antony davis nba 2k20.jfif">
+    {% for item in units %}
+        <p>
+            Unit name: {{ item[0] }}
+        </p>
+        <img src="../static/images/{{item[0]}}.png" alt="{{item[0]}}">
+    {% endfor %}
+</body>
 </html>
