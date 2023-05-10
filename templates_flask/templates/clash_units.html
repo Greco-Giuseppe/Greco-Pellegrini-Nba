@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Clash Units</title>
+    <title>NBA2K20</title>
+    <link rel="stylesheet"
+          href="style.css" />
 </head>
 <body>
+    <h1>I CAMPIONI PIU' FORTI DELL'NBA</h1>
     <img src="../static/images/antony davis nba 2k20.jfif">
     {% for item in units %}
         <p>
-            Unit name: {{ item[0] }}
+            Unit name: {{ item[1] }}
         </p>
-        <img src="../static/images/{{item[0]}}.png" alt="{{item[0]}}">
+        <img src="../static/images/{{item[0]}}.jpg" alt="{{item[0]}}">
     {% endfor %}
 </body>
 </html>
