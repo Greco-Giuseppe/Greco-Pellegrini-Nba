@@ -14,6 +14,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def unitList():
-    mycursor.execute("SELECT * FROM Clash_Unit")
+    mycursor.execute("SELECT * FROM Clash_Unit limit 10")
     myresult = mycursor.fetchall()
     return render_template('clash_units.html', units=myresult)
