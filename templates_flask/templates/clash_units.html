@@ -9,9 +9,16 @@
     <h1>I CAMPIONI PIU' FORTI DELL'NBA</h1>
     <img src="../static/images/0.jpg">
     {% for item in units %}
-        <p>
-            Unit name: {{ item[1] }}
-        </p>
+        <p class="pippo">NOME: {{ item[1] }} </p>
+        <p class="pippo">RATING : {{ item[2] }}</p>
+        <p class="sinistra">NUMERO DI MAGLIA : {{ item[3]}} <a class="destra">DATA DI NASCITA : {{ item[6] }} </a></p>
+        <p class="sinistra">FRANCHIGIA : {{ item[4] }} </p>
+        <p class="sinistra">ANNO DRAFT :  {{ item[11] }} </p>
+        <p class="sinistra">NUMERO SCELTA :  {{ item[13] }}</p>
+        <p class="destra">DATA DI NASCITA : {{ item[6] }} </p>
+        <p class="destra">ALTEZZA : {{ item[7] }}</p>
+        <p class="destra">PESO : {{ item[8] }}</p>
+        <p class="destra">COLLEGE : {{ item[14] }}</p>
         <img src="../static/images/{{item[0]}}.jpg" alt="{{item[0]}}">
     {% endfor %}
 </body>
